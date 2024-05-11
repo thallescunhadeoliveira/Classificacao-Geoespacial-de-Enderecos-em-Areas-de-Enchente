@@ -2,6 +2,10 @@
 # Objetivo:
 Neste repositório trago como buscar a localização através de uma lista de endereços e como consultar quais pontos estão dentro ou próximos de uma área
 
+<div align=center>
+  <img src="https://github.com/thallescunhadeoliveira/Levantamento-de-Localiza-es-Afetadas-pelas-Enchentes-POA-/blob/main/Supermercados%20Porto%20Alegre.jpg" alt="pontos-geolocalizacao" width=75% >
+</div>
+
 # Motivação:
 Com as enchentes no Sul em maio de 2024 e a situação catastrófica, os dados podem salvar vidas e ajudar grupos e o poder público com previsibilidade e informação sobre áreas alagadas.
 
@@ -11,10 +15,9 @@ Dentre os dados disponíveis, temos um mapeamento de possíveis áreas alagadas 
 
 Esses dados podem ser úteis de inúmeras formas e gostaria de compartilhar uma forma simples de conseguir plotar esse gráfico no Power BI, classificando uma lista de endereços para mapear se foram atingidas pelas enchentes ou não, o que pode ajudar na tomada de decisão em diversos tipos de cenário.
 
-
 # Preparando os dados:
 
-🌎 Acesse o Link 2 para ter acesso ao mapa no Google Earth. Aqui você pode baixar o arquivo no formato KML.
+🌎 Acesse o link (https://www.google.com/maps/d/viewer?) para ter acesso ao mapa no Google Earth. Aqui você pode baixar o arquivo no formato KML.
 
 ⚙️ Acesse mapshaper.org e converta o arquivo em GeoJson (.json). 
 
