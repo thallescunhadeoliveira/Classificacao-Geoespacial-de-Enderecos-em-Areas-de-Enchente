@@ -23,15 +23,23 @@ Esses dados podem ser úteis de inúmeras formas e gostaria de compartilhar uma 
 
 👥 Levante uma lista de endereços do que deseja utilizar para consulta. No caso desse repositório, uso como exemplo uma lista de supermercados de Porto Alegre encontrada na internet (https://www.tiendeo.com.br/Lojas/porto-alegre/supermercados#google_vignette)
 
-
 # Classificando a lista de endereços:
 
 📌 Tendo uma lista de endereços ou CEPs, é necessário encontrar as coordenadas geográficas (latitude, longitude) para cada ponto. Uma maneira de fazer isso é consultando o endereço usando a API pública do geopy com o módulo Nominatim, que usa os dados do Open Street Map. Passando uma string com o endereço, ele irá retornar as coordenadas dos seus registros.
 
-🌐 Com os dados de geolocalização em mãos, precisamos classificar esses pontos como (a) dentro da área afetada, (b) fora da área porém próximo, e (c) distante da área. Para isso, podemos consultar se as coordenadas estão dentro do "multipolígono" no arquivo que baixamos. Importando o arquivo KML e usando a API do opengis, é possível construir uma lista de polígonos referente as áreas de alagamento e iterar com a lista de pontos de geolocalização classificando entre aqueles dentro da área, fora porém até 500 metros, ou em áreas seguras.
+📋 Com os dados de geolocalização em mãos, precisamos classificar esses pontos como (a) dentro da área afetada, (b) fora da área porém próximo, e (c) distante da área. Para isso, podemos consultar se as coordenadas estão dentro do "multipolígono" no arquivo que baixamos. Importando o arquivo KML e usando a API do opengis, é possível construir uma lista de polígonos referente as áreas de alagamento e iterar com a lista de pontos de geolocalização classificando entre aqueles dentro da área, fora porém até 500 metros, ou em áreas seguras.
 
 🗺️ Com essa classificação e coordenadas, basta importar os dados no Power BI. Recomendo a extensão gratuita do IconMap, que permite importar mapas personalizados, passando uma URL pública com os dados GeoJson, que podem ser publicadas via repositório GitHub (mais detalhes nesse tutorial https://www.youtube.com/watch?v=0OjejZnEt1g). Com isso, basta preencher os campos "Category" com a granularidade que precisa (algum campo como Nome ou ID), campos de latitude e longitude (sumarizar pela média) e em "Size", escolher o campo para definir o tamanho de bolha no mapa.
-
+Obs: Caso queira uma URL de um arquivo GeoJson das regiões alagadas para colocar no IconMap, pode usar essa URL desse repositório(https://raw.githubusercontent.com/thallescunhadeoliveira/Levantamento-de-Localiza-es-Afetadas-pelas-Enchentes-POA-/main/Mapeamento%20Areas%20Alagadas%20Rio%20Grande%20do%20Sul%20(GeoJson).json)
 
 ☑️ Com isso, você terá uma lista de registros (seja de voluntários, pessoas, clientes, estabelecimentos etc) que foram atingidos, potencialmente atingidos ou que estão em áreas próximas.
 Como exemplo, busquei endereços de supermercados de Porto Alegre disponíveis na internet.
+
+# Arquivos
+
+🐍 "Classificando Localizações de Acordo com uma Área.ipynb" - Arquivo Jupyter Notebook com o código para extrair latitude e longitude com base em um endereço e consultar se essas coordenadas estão dentro ou próximas de uma área.
+
+🛒 "Supermercados Porto Alegre.xlsx" - Um arquivo no formato do Microsoft Excel com dados de endereços de supermercados encontrados através desse site (https://www.tiendeo.com.br/Lojas/porto-alegre/supermercados#google_vignette).
+
+🌐 "Mapeamento Areas Alagadas Rio Grande do Sul.json" - Arquivo em formato GeoJson com as coordenadas das áreas possivelmente alagadas extraído desse mapa da UFRGS (https://www.google.com/maps/d/viewer)
+
