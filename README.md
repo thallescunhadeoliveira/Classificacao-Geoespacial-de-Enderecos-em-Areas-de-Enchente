@@ -1,6 +1,6 @@
 # Classificação Geoespacial de Endereços em Áreas de Enchente na Região Metropolitana de Porto Alegre
 # Objetivo:
-Neste repositório trago como buscar a localização através de uma lista de endereços e como consultar quais pontos estão dentro ou próximos de uma área
+Neste repositório mostro como buscar a geolocalização através de um endereços e consultar se as coordenadas estão dentro ou próximos a uma área.
 
 <div align=center>
   <img src="https://github.com/thallescunhadeoliveira/Levantamento-de-Localiza-es-Afetadas-pelas-Enchentes-POA-/blob/main/Supermercados%20Porto%20Alegre.jpg" alt="pontos-geolocalizacao" width=75% >
