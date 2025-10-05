@@ -13,7 +13,12 @@ Nesse sentido, quero compartilhar esse repositório de informações geográfica
 
 Dentre os dados disponíveis, temos um mapeamento de possíveis áreas alagadas pelas chuvas feito por geoprocessamento de satélite e que está disponível para consulta e download.
 
-Esses dados podem ser úteis de inúmeras formas e gostaria de compartilhar uma forma simples de conseguir plotar esse gráfico no Power BI, classificando uma lista de endereços para mapear se foram atingidas pelas enchentes ou não, o que pode ajudar na tomada de decisão em diversos tipos de cenário.
+Esses dados podem ser úteis de inúmeras formas e gostaria de compartilhar uma forma simples de conseguir classificar uma lista de endereços para mapear se foram atingidas pelas enchentes ou não, o que pode ajudar na tomada de decisão em diversos tipos de cenário.
+
+Através dos métodos mostrados nesse repositório, será possível:<br>
+. Encontrar coordenadas geográficas a partir de um endereço;<br>
+. Classificar se o endereço está dentro, próximo ou fora de uma área;<br>
+. Plotar um gráfico em Power BI mostrando a área e os endereços.<br>
 
 # Preparando os dados:
 
